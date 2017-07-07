@@ -1,18 +1,18 @@
 package me.codebase.db_serise.mybatis.entry;
 
-import com.google.common.io.Resources;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by chendong on 2017/7/5.
- *
+ * <p>
  * xml starter
+ * <p>
+ * mybatis 和 spring 结合使用
  */
 public class XmlEntry {
 
     public static void main(String[] args) {
-        String path = Resources.getResource("ApplicationContext.xml").getPath();
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(path);
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         context.start();
     }
 
