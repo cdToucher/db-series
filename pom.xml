@@ -18,6 +18,9 @@
         <spring.version>4.3.9.RELEASE</spring.version>
         <guava.version>22.0</guava.version>
         <mybatis-spring.version>1.3.1</mybatis-spring.version>
+        <hibernate.version>5.2.10.Final</hibernate.version>
+        <persistence.version>2.1.1</persistence.version>
+        <spring-data.version>1.11.3.RELEASE</spring-data.version>
     </properties>
 
 
@@ -67,7 +70,31 @@
                 <version>6.0.6</version>
             </dependency>
 
-
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-ehcache</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.persistence</groupId>
+                <artifactId>javax.persistence</artifactId>
+                <version>${persistence.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>${spring-data.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
