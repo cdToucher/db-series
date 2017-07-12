@@ -13,4 +13,5 @@ public interface ApplicationRepository extends JpaRepository<AppInfo, Long> {
 
     AppInfo findByAppId(String id);
 
+
 }
